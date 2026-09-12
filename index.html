@@ -738,6 +738,19 @@
   gtag('js', new Date());
   gtag('config', 'G-H7QW2PBE3C');
 </script>
+<style>
+#footage { scroll-margin-top: 90px; border-bottom: 1px solid var(--border); }
+.footage-card { display:grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap:2.5rem; align-items:center; margin-top:2rem; }
+.footage-card video { display:block; width:100%; aspect-ratio:16/9; background:#131614; }
+.footage-card h3 { font-family:'Cormorant Garamond',serif; font-size:2rem; line-height:1.2; margin-bottom:1rem; }
+.footage-card p { color:var(--text-muted); margin-bottom:1rem; }
+.footage-actions { display:flex; gap:1rem; flex-wrap:wrap; margin:1.5rem 0 1rem; }
+.footage-actions a { text-align:center; }
+.footage-note { font-size:.8rem; }
+.footage-mobile-link { display:none; }
+@media(min-width:769px) and (max-width:1150px) { .nav-links {gap:1rem;} nav {padding-left:1.5rem;padding-right:1.5rem;} }
+@media(max-width:768px) { .footage-card {grid-template-columns:1fr;} .footage-mobile-link {display:inline-block;color:var(--teal);font-size:.8rem;text-decoration:none;} .footage-actions a {width:100%;} }
+</style>
 </head>
 <body>
 
@@ -746,13 +759,13 @@
   <a href="#" class="nav-logo">Orbital<span>Flyers</span></a>
   <ul class="nav-links">
     <li><a href="#channel">The Channel</a></li>
-    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#gallery">Gallery</a></li><li><a href="#footage">Buy Footage</a></li>
     <li><a href="#commissions">Commissions</a></li>
     <li><a href="https://shop.orbitalflyers.co.uk/en-gbp" target="_blank">Shop</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-</nav>
+<a href="#footage" class="footage-mobile-link">Buy footage</a></nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -888,6 +901,27 @@
 </div>
 
 <!-- COMMISSIONS -->
+<section id="footage">
+  <p class="section-label">Footage for your next project</p>
+  <h2>Scottish aerial footage</h2>
+  <p style="color:var(--text-muted);max-width:650px;margin-top:1rem;">Discover Scotland from above. Starting with Glasgow, original footage filmed by OrbitalFlyers and available to license for your own productions.</p>
+  <article class="footage-card">
+    <video controls playsinline preload="none" poster="assets/glasgow-aerial-01-preview.jpg" aria-label="Watermarked preview of Glasgow city centre aerial footage">
+      <source src="assets/glasgow-aerial-01-preview.mp4" type="video/mp4">
+      <a href="assets/glasgow-aerial-01-preview.mp4">Watch the Glasgow preview</a>
+    </video>
+    <div>
+      <h3>Glasgow City Centre Aerial 01</h3>
+      <p>A wide view across the city's streets, rooftops and skyline.</p>
+      <p>11 seconds &middot; 30fps &middot; MP4 &middot; Silent</p>
+      <div class="footage-actions">
+        <a class="btn-primary" href="https://shop.orbitalflyers.co.uk/products/glasgow-city-centre-aerial-01-4k-hd-stock-footage">4K + HD &middot; &pound;9.99</a>
+        <a class="btn-primary" href="https://shop.orbitalflyers.co.uk/products/glasgow-city-centre-aerial-01-1080p-stock-footage">1080p &middot; &pound;5.99</a>
+      </div>
+      <p class="footage-note">View full licence terms and purchase in our shop. Downloads are supplied without watermarks. The 4K pack includes an HD copy. Prices may vary with currency conversion.</p>
+    </div>
+  </article>
+</section>
 <section id="commissions">
   <div class="commissions-section">
     <p class="section-label">Creative Commissions</p>
